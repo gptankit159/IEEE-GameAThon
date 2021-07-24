@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+.memory-game{
+    width: 45vw;
+    height: 78vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+.memory-card{
+    position: relative;
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.memory-card:active{
+    transform: scale(.92);
+    transition: transform .2s;
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+
+}
+.front-face , .back-face{
+    position: absolute;
+    border: 2px solid deeppink;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: blue;
+    backface-visibility: hidden;
+}
+.front-face{
+    transform: rotateY(180deg);
+}
+img{
+    width: 80px;
+}
+
+.content{
+    background: rgb(251, 255, 0);
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 6px;
+
+}
+.content h3,h2{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.txt{
+    font-size: 30px;
+    width: 500px;
+    margin:auto;
+    background: darkorange;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.txt button{
+    width: 80px;
+    margin: auto;
+    height: 30px;
+    background-color: darkorchid;
+}
+
+.newtx {
+    position: absolute;
+    width: 40%;
+    left: 24%;
+    height: 30%;
+    top: 35%;
+    z-index: 1;
+}
+
+.fadecard{
+    opacity: .5;
+}

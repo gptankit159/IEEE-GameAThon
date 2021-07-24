@@ -1,0 +1,71 @@
+  h1{
+    font-family:fantasy ;
+    font-size: 50px;
+    color:black;
+  
+  }
+  h1:hover{
+    color:darkblue;
+  }
+ 
+  #board {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px solid black ;
+   
+    background-color:rgb(104, 250, 255);
+    overflow: hidden;
+    
+    
+  }
+  
+
+
+  
+
+  #jet {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("rocket.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 50%;
+    bottom: 0px;
+  }
+
+  .bullets {
+    position: absolute;
+    bottom: 40px;
+    left: 51%;
+    width: 20px;
+    height: 20px;
+    background: url("bullet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .balloons {
+    position: absolute;
+    top: 0px;
+    width: 20%;
+    height: 20%;
+    background-image: url("b1.png");
+    background-image: url("b2.png");
+    background-image: url("b3.png");
+    
+    
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+  #points {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    opacity: 0.7;
+    font-size: 5em;
+    color: black;
+  }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./flipCard/style.css">
+    <link rel="stylesheet" href="./balloon-shooter/style.css">
+</head>
+<body>
+    <section class="master">
+        <div class="main">
+            <button class="arcade" onclick="window.location.reload()">Gaming Arcade</button>
+            <div class="games">
+                <button onclick="balloong()">Balloon Shooter</button> 
+                <button onclick="flipcardg()">Flip Card</button>
+            </div>
+            <div class="game1 hidden"> <br>
+                <section class="content">
+                    <h2>Flip Card Game</h2>
+                    <h3><span>Total Moves:50 </span> <span>Remaining Moves: <em id="cnt">50</em> </span></h3>
+                </section>
+                <br>
+                <div class="newtxt"></div>
+                <section class="memory-game">
+                    <div class="memory-card" data-name="im1">
+                        <img class="front-face" src="img/1.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im1">
+                        <img class="front-face" src="img/1.png" alt=""/>
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im2" >
+                        <img class="front-face" src="img/2.png" alt=""/>
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card"  data-name="im2">
+                        <img class="front-face" src="img/2.png" alt=""  />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im3">
+                        <img class="front-face" src="img/3.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im3"> 
+                        <img class="front-face" src="img/3.png" alt=""/ >
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im4">
+                        <img class="front-face" src="img/4.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im4">
+                        <img class="front-face" src="img/4.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im5">
+                        <img class="front-face" src="img/5.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im5">
+                        <img class="front-face" src="img/5.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im6">
+                        <img class="front-face" src="img/6.png" alt="" />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im6">
+                        <img class="front-face" src="img/6.png" alt=""  />
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im7">
+                        <img class="front-face" src="img/7.png" alt=""/>
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im7"> 
+                        <img class="front-face" src="img/7.png" alt=""/>
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im8">
+                        <img class="front-face" src="img/8.png" alt=""/>
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                    <div class="memory-card" data-name="im8">
+                        <img class="front-face" src="img/8.png" alt=""/>
+                        <img class="back-face" src="img/back.png" alt="" />
+                    </div>
+                </section>
+            </div>
+            <div class="game2 hidden"> <br>
+                <section class="content">
+                    <h2>Balloon Shooter</h2>
+                </section> <br>
+                <section class="balloon-shooter">
+                    <div id="board">
+                        <div id="points">0</div>
+                        <div id="balloons"></div>
+                        <div id="jet"></div>    
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </section>
+    <div id="particles-js"></div>
+    <script src="./asset/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="./asset/app.js"></script>
+    <script src="./flipCard/script.js"></script>
+    <script src="./balloon-shooter/script.js"></script>
+</body>
+</html>

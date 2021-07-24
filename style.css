@@ -1,0 +1,55 @@
+body{
+    overflow: hidden;
+    background: url("./balloon-shooter/space.jpg");
+    background-size: cover;
+}
+.master{
+    position: absolute;
+    width: 100vw;
+    top: 0px;
+    height: 90vh;
+    /* z-index: 2; */
+}
+
+.main{
+    position: relative;
+    top: 10px;
+    width: 70vw;
+    margin: auto;
+}
+.arcade{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 30px 0px;
+    box-shadow: 7px 7px blue;
+}
+.arcade:hover{
+    background-color: blueviolet;
+    transform: scale(1.02);
+    transition: all .5s;
+}
+.games,.game{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+.games button{
+    font-size: 20px;
+    padding: 10px 15px;
+    width: 300px;
+    margin: 50px;
+    border-radius: 40px 0px;
+    box-shadow: 7px 7px blue;
+}
+.games button:hover{
+    transform: scale(1.05);
+    transition: all .5s;
+}
+.hidden{
+    display: none;
+}
